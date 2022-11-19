@@ -1,5 +1,6 @@
 // @ts-nocheck
-import { Box, IconButton, useTheme, InputBase } from "@mui/material";
+import { Box, IconButton, useTheme } from "@mui/material";
+import InputBase from "@mui/material/InputBase";
 import React, { useContext } from "react";
 import { ColorModeContext, tokens } from "../../context/theme";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
