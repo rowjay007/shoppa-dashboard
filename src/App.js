@@ -1,7 +1,6 @@
 // @ts-nocheck
 import { Route, Routes } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import "./App.css";
 import { ColorModeContext, useMode } from "./context/theme";
 import Header from "./container/window/Header";
 import Sidebar from "./container/window/Sidebar";
@@ -14,7 +13,7 @@ import Dashboard from "./container/dashboard";
 // import Line from "./container/line";
 // import Pie from "./container/pie";
 // import Geography from "./container/geography";
-// import Calender from "./container/calender";
+// import Calendar from "./container/calendar";
 // import Faq from "./container/faq";
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
           <Sidebar />
           <main className="content">
             <Header />
-
             <Routes>
               <Route path="/" element={<Dashboard />} />
               {/* <Route path='/team' element={<Team />} /> */}
@@ -38,7 +36,7 @@ function App() {
               {/* <Route path='/pie' element={<Pie />} /> */}
               {/* <Route path='/line' element={<Line />} /> */}
               {/* <Route path='/geography' element={<Geography />} /> */}
-              {/* <Route path='/calender' element={<Calender />} /> */}
+              {/* <Route path='/calender' element={<Calendar />} /> */}
               {/* <Route path='/faq' element={<Faq />} /> */}
             </Routes>
           </main>
