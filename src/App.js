@@ -6,7 +6,7 @@ import Topbar from "./container/window/Topbar";
 import Sidebar from "./container/window/Sidebar";
 import Dashboard from "./container/dashboard";
 import { useState } from "react";
-// import Team from "./container/team";
+import Team from "./container/team";
 // import Invoice from "./container/invoice";
 // import Contacts from "./container/contacts";
 // import Bar from "./container/bar";
@@ -30,7 +30,7 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              {/* <Route path='/team' element={<Team />} /> */}
+              <Route path='/team' element={<Team />} />
               {/* <Route path='/contacts' element={<Contacts />} /> */}
               {/* <Route path='/invoice' element={<Invoice />} /> */}
               {/* <Route path='/form' element={<Form />} /> */}
