@@ -5,6 +5,7 @@ import { ColorModeContext, useMode } from "./context/theme";
 import Header from "./container/window/Header";
 import Sidebar from "./container/window/Sidebar";
 import Dashboard from "./container/dashboard";
+import { useState } from "react";
 // import Team from "./container/team";
 // import Invoice from "./container/invoice";
 // import Contacts from "./container/contacts";
@@ -18,14 +19,15 @@ import Dashboard from "./container/dashboard";
 
 function App() {
   const [theme, colorMode] = useMode();
+  const [isSidebar, setIsSidebar] = useState(true);
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <Sidebar />
+          <Sidebar isSidebar={isSidebar} />
           <main className="content">
-            <Header />
+            <Header setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
               {/* <Route path='/team' element={<Team />} /> */}
