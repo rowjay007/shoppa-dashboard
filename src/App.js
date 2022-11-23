@@ -10,7 +10,7 @@ import Team from "./container/team";
 import Invoices from "./container/invoices";
 import Contacts from "./container/contacts";
 // import Bar from "./container/bar";
-// import Form from "./container/form";
+import Form from "./container/form";
 // import Line from "./container/line";
 // import Pie from "./container/pie";
 // import Geography from "./container/geography";
@@ -30,10 +30,10 @@ function App() {
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path='/team' element={<Team />} />
-              <Route path='/contacts' element={<Contacts />} />
-              <Route path='/invoices' element={<Invoices />} />
-              {/* <Route path='/form' element={<Form />} /> */}
+              <Route path="/team" element={<Team />} />
+              <Route path="/contacts" element={<Contacts />} />
+              <Route path="/invoices" element={<Invoices />} />
+              <Route path="/form" element={<Form />} />
               {/* <Route path='/bar' element={<Bar />} /> */}
               {/* <Route path='/pie' element={<Pie />} /> */}
               {/* <Route path='/line' element={<Line />} /> */}
