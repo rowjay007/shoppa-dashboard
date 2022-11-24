@@ -11,10 +11,10 @@ import Invoices from "./container/invoices";
 import Contacts from "./container/contacts";
 // import Bar from "./container/bar";
 import Form from "./container/form";
+import Calendar from "./container/calendar";
 // import Line from "./container/line";
 // import Pie from "./container/pie";
 // import Geography from "./container/geography";
-// import Calendar from "./container/calendar";
 // import Faq from "./container/faq";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
               {/* <Route path='/pie' element={<Pie />} /> */}
               {/* <Route path='/line' element={<Line />} /> */}
               {/* <Route path='/geography' element={<Geography />} /> */}
-              {/* <Route path='/calender' element={<Calendar />} /> */}
+              <Route path="/calendar" element={<Calendar />} />
               {/* <Route path='/faq' element={<Faq />} /> */}
             </Routes>
           </main>
