@@ -9,7 +9,7 @@ import { useState } from "react";
 import Team from "./container/team";
 import Invoices from "./container/invoices";
 import Contacts from "./container/contacts";
-// import Bar from "./container/bar";
+import Bar from "./container/bar";
 import Form from "./container/form";
 import Calendar from "./container/calendar";
 // import Line from "./container/line";
@@ -34,7 +34,7 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
-              {/* <Route path='/bar' element={<Bar />} /> */}
+              <Route path='/bar' element={<Bar />} />
               {/* <Route path='/pie' element={<Pie />} /> */}
               {/* <Route path='/line' element={<Line />} /> */}
               {/* <Route path='/geography' element={<Geography />} /> */}
