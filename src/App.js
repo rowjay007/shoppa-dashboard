@@ -15,6 +15,7 @@ import Calendar from "./container/calendar";
 import Line from "./container/line";
 import Pie from "./container/pie";
 import Geography from "./container/geography";
+import JiraKanbanBoard from "./container/kanban";
 import Faq from "./container/faq";
 
 function App() {
@@ -34,12 +35,13 @@ function App() {
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
-              <Route path='/bar' element={<Bar />} />
-              <Route path='/pie' element={<Pie />} />
-              <Route path='/line' element={<Line />} />
-              <Route path='/geography' element={<Geography />} />
+              <Route path="/bar" element={<Bar />} />
+              <Route path="/pie" element={<Pie />} />
+              <Route path="/line" element={<Line />} />
+              <Route path="/geography" element={<Geography />} />
               <Route path="/calendar" element={<Calendar />} />
-              <Route path='/faq' element={<Faq />} />
+              <Route path="/faq" element={<Faq />} />
+              <Route path="/kanban" element={<JiraKanbanBoard />} />
             </Routes>
           </main>
         </div>

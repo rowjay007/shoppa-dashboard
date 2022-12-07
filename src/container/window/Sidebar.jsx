@@ -16,6 +16,7 @@ import PieChartOutlinedIcon from "@mui/icons-material/PieChartOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import ViewKanbanOutlinedIcon from "@mui/icons-material/ViewKanbanOutlined";
 import { tokens } from "../../context/theme";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
@@ -176,6 +177,22 @@ const Sidebar = () => {
               title="FAQ"
               to="/faq"
               icon={<HelpOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            ></Item>
+            <Typography
+              variant="h6"
+              color={colors.grey[300]}
+              sx={{ m: "15px 0 5px 20px" }}
+            >
+              {" "}
+              Apps
+            </Typography>
+
+            <Item
+              title="Kanban"
+              to="/kanban"
+              icon={<ViewKanbanOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             ></Item>
